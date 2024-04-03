@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>Get Started!!</title>
+        <link rel="stylesheet" href="style.css">
+        
+        <style>
+            
+            .input-container {
+              display: -ms-flexbox;
+              display: flex;
+              width: 100%;
+              margin-bottom: 15px;
+            }
+            
+            .input-field {
+              width: 100%;
+              padding: 20px;
+              outline: none;
+            }
+            
+            
+            /* Set a style for the submit button */
+            .btn {
+              background-color: dodgerblue;
+              color: white;
+              padding: 15px 20px;
+              border: none;
+              cursor: pointer;
+              width: 300px;
+              opacity: 0.9;
+            }
+            
+            .btn:hover {
+              opacity: 1;
+            }
+            </style>
+    </head>
+    <body bgcolor="#E6E6FA">
+        <div class="title">
+            <div class="icons1">
+                <img src="counselor.png" height="30px">
+                <h1 align="middle"> CAREER COUNSELING</h1>
+            </div>
+            <div class="icons">
+                <img src="instagram.png" height="30px">
+                <img src="facebook.png" height="30px">
+                <img src="linkedin.png" height="33px">
+                <img src="letter.png" height="33px">
+            </div>
+        </div>
+
+        <h1 align="middle">ENROLL NOW</h1>
+        
+        <div class="gifform">
+        <div style="display: flex; gap: 340px;">
+            <div>
+                <img src="career form.gif" style="padding: 3%; margin-left: 40px;">
+            </div>
+            <div>
+                    <form action="submit_counseling_registration.php" method="POST">
+                        <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname" required><br><br>
+                    
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone" placeholder="+91" required><br><br>
+                    
+                    <label for="age">Age:</label><br>
+                    <input type="number" id="age" name="age" min="15" required><br><br>
+                    
+                    <label for="gender">Gender:</label><br>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select><br><br>
+                    
+                    <label for="occupation">Current Occupation:</label><br>
+                    <input type="text" id="occupation" name="occupation" required><br><br>
+                    
+                    <label for="interests">Interests (comma-separated):</label><br>
+                    <input type="text" id="interests" name="interests"><br><br>
+                    
+                    <label for="goals">Career Goals:</label><br>
+                    <textarea id="goals" name="goals" rows="4" required></textarea><br><br>
+                    <center>
+                        <a href="formcomplete.html"> <input type="submit" value="Submit"> </a>
+                    </center>
+                </form>
+            </div>
+</div>
+    
+        <img src="career form2.gif" height="300px" style="border-radius: 20px; padding-top: 10%; margin-left: 160px; mix-blend-mode: multiply;">
+    </div>
+
+    <hr color="black"> 
+    <div class="contact">
+        <h4 align="center">CONTACT US | FEEDBACK </h4>
+        <p align="center"> whatsapp no. *********56 | ********66 | <br> gmail: moi*****@gmail.com </p>
+    </div>
+</body>
+</html>
